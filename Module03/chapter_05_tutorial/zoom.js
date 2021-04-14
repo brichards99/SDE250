@@ -39,3 +39,4 @@ function createEventListener() {
 
 /* add img src value and create event listener when page finishes loading */
 window.onload = pageSetup;
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- saved from url=(0628)https://a1008-86577355.cluster95.canvas-user-content.com/courses/1008~1043864/files/1008~86577355/course%20files/Special%20Project/ajax.html?download=1&inline=1&sf_verifier=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJ1c2VyX2lkIjoiMTAwODAwMDAwMDM3NTM5MTUiLCJyb290X2FjY291bnRfaWQiOiIxMDA4MDAwMDAwMDAwMDQxNyIsIm9hdXRoX2hvc3QiOiJpdnlsZWFybi5pdnl0ZWNoLmVkdSIsInJldHVybl91cmwiOm51bGwsImZhbGxiYWNrX3VybCI6Imh0dHBzOi8vaXZ5bGVhcm4uaXZ5dGVjaC5lZHUvY291cnNlcy8xMDQzODY0L2ZpbGVzLzg2NTc3MzU1L3ByZXZpZXc_ZmFsbGJhY2tfdHM9MTYxODQyMjA4NyIsImV4cCI6MTYxODQyMjM4N30.2LnhcWPpHyuaRpItANig2Y07Axci_kPnNaJt6COltxMNVdgnaVE1luoCsRRmzovhisRsp8Of8yXk4ACSlkijCQ -->
+<html><script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>
+<div id="demo">
+<h2>The XMLHttpRequest Object</h2>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "lorem_ipsum.txt", true);
+  xhttp.send();
+}
+</script>
+
+
+</body></html>
